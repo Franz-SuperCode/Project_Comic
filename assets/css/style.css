@@ -1,0 +1,304 @@
+/*! ===============================================
+/*!           Allgemeines
+/*!=============================================== */
+
+@font-face {
+    font-family: graphik-medium;
+    src: url("../fonts/Graphik-Medium.ttf");
+}
+
+@font-face {
+    font-family: graphik-regular;
+    src: url("../fonts/Graphik-Regular.woff");
+}
+
+@font-face {
+    font-family: theinhardt;
+    src: url("../fonts/Theinhardt-Lt.woff");
+}
+
+@font-face {
+    font-family: tiempos;
+    src: url("../fonts/TiemposHeadline-Semibold.woff");
+}
+
+.font_graphik-medium {
+    font-family: graphik-medium;
+}
+
+.font_graphik-regular {
+    font-family: graphik-regular;
+}
+
+.font_theinhardt {
+    font-family: theinhardt;
+}
+
+.font_tiempos {
+    font-family: tiempos;
+}
+
+/* Farben: #2B2C2E /  #9FA2A7 / #27282A /  #848689 / #3D3E41 / #fff */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+.black1 {
+    color: #2B2C2E;
+}
+
+.black2 {
+    color: #27282A;
+}
+
+.black3 {
+    color: #3D3E41;
+}
+
+.white {
+    color: #fff
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.background_grey {
+    background-color: #9FA2A7;
+}
+
+
+/** ===============================================
+/**           Header
+/**=============================================== */
+
+header {
+    padding: 2rem;
+}
+
+.headerContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.headerContainer_nav {}
+
+.headerContainer_nav ul {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+    margin: 2rem 0;
+}
+
+.headerContainer button {
+    padding: 0.5rem 1rem;
+    background-color: #fff;
+}
+
+.headerContainer_nav ul li a {
+    text-decoration: none;
+}
+
+.header__h2 {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+
+/*? ===============================================
+/*?           Main
+/*?=============================================== */
+
+main {
+    padding: 2rem;
+}
+
+
+main section {
+    padding: 2rem 0;
+}
+
+.price {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    margin-top: 2rem;
+}
+
+main section article h3 {
+    margin: 2rem 0;
+}
+
+main section article h2 {
+    margin: 5rem 0;
+}
+
+.containerHowItWorks article ol {
+    margin-left: 10%;
+}
+
+/*TODO ===============================================
+/*TODO           footer
+/*TODO=============================================== */
+
+footer {
+    padding: 2rem;
+}
+
+footer section {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+
+}
+
+.costume_guy {
+    max-width: 20%;
+}
+
+@media only screen and (min-width: 700px) {
+    main section {
+        padding: 10rem 0;
+    }
+
+    .headerContainer {
+        padding: 1rem 4rem 4rem 4rem;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 3rem;
+    }
+
+    .headerContainer h1 {
+        order: 2;
+    }
+
+    .headerContainer nav {
+        order: 1;
+    }
+
+    .headerContainer button {
+        order: 3;
+    }
+
+
+
+    main,
+    footer {
+        padding: 4rem;
+    }
+
+    /* First Section */
+
+    main section:nth-of-type(1) {
+        max-width: 100%;
+        display: flex;
+        align-items: baseline;
+        gap: 5rem;
+    }
+
+    main section:nth-of-type(1) p {
+        max-width: 65%;
+    }
+
+    main section:nth-of-type(1) article {
+        max-width: 20%;
+    }
+
+    .price {
+        font-size: 5rem;
+    }
+
+    /* Second Section */
+
+    main section:nth-of-type(2) {
+        display: flex;
+    }
+
+    main section:nth-of-type(2) img {
+        max-width: 50%;
+    }
+
+    /* Third Section */
+
+    main section:nth-of-type(3) img {
+        max-width: 50%;
+    }
+
+    main section:nth-of-type(3) {
+        display: flex;
+    }
+
+    /* Section Four*/
+
+    main section:nth-of-type(4) {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+    }
+
+    main section:nth-of-type(4) article:nth-of-type(1) {
+        max-width: 50%;
+    }
+
+
+
+    main section:nth-of-type(4) article:nth-of-type(2) {
+        display: flex;
+        max-width: 100%;
+        justify-content: right;
+    }
+
+    .img__conversion {
+        max-width: 50%;
+        position: relative;
+        bottom: 5rem;
+        right: 2rem;
+    }
+
+    .p2__critique {
+        text-align: left;
+        max-width: 35%;
+    }
+
+    /*Footer*/
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer section {
+        align-items: flex-end;
+    }
+
+    header h2 {
+        font-size: 3.5rem;
+    }
+
+    main h2,
+    footer h2 {
+        font-size: 5rem;
+    }
+
+    .containerHowItWorks {
+        padding: 5rem 0;
+    }
+}
