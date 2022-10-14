@@ -1,5 +1,9 @@
-let btn = document.querySelector(".btn_color");
+
 
 function changeColor(event) {
-    event.prevent()
+    event.preventDefault()
+
+    let body = document.querySelector("body");
+    body.classList.toggle("allBlack");
+
 }

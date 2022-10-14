@@ -302,3 +302,9 @@ footer section {
         padding: 5rem 0;
     }
 }
+
+
+.allBlack {
+    color: #fff;
+    background-color: black;
+}
