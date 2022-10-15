@@ -80,7 +80,7 @@ body {
 }
 
 .background_grey {
-    background-color: #9FA2A7;
+    background-color: #F1F1F4;
 }
 
 
@@ -126,14 +126,12 @@ header {
 /*?           Main
 /*?=============================================== */
 
-main {
-    padding: 2rem;
-}
-
-
 main section {
-    padding: 2rem 0;
+    padding: 3rem;
 }
+
+
+
 
 .price {
     font-size: 2rem;
@@ -151,6 +149,19 @@ main section article h2 {
 
 .containerHowItWorks article ol {
     margin-left: 10%;
+}
+
+main section:nth-of-type(4) {
+    line-height: 3rem;
+}
+
+.article__conversion {
+    display: flex;
+    flex-direction: column;
+}
+
+.article__conversion p {
+    margin-top: 2rem;
 }
 
 /*TODO ===============================================
@@ -173,8 +184,9 @@ footer section {
 }
 
 @media only screen and (min-width: 700px) {
-    main section {
-        padding: 10rem 0;
+
+    main section h2 {
+        font-size: 4rem;
     }
 
     .headerContainer {
@@ -228,16 +240,19 @@ footer section {
 
     main section:nth-of-type(2) {
         display: flex;
+        gap: 2rem;
     }
 
     main section:nth-of-type(2) img {
         max-width: 50%;
+        object-fit: contain;
     }
 
     /* Third Section */
 
     main section:nth-of-type(3) img {
         max-width: 50%;
+        object-fit: contain;
     }
 
     main section:nth-of-type(3) {
@@ -298,9 +313,16 @@ footer section {
         font-size: 5rem;
     }
 
-    .containerHowItWorks {
-        padding: 5rem 0;
+    .article__conversion {
+        display: flex;
+        flex-direction: row;
     }
+
+    .article__conversion img {
+        order: 2;
+    }
+
+
 }
 
 
